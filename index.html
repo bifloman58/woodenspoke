@@ -3,190 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wooden Spoke - Custom wood furniture and designs by Kevin Miller.">
-    <title>Wooden Spoke - Portfolio</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Futura', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #444;
-            color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1rem;
-            margin-top: 0.5rem;
-        }
-        nav {
-            margin-top: 1rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.2rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        section h2 {
-            border-bottom: 2px solid #444;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .about img {
-            float: left;
-            margin-right: 1rem;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .portfolio-item p {
-            text-align: center;
-            margin-top: 0.5rem;
-        }
-        .contact form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact label {
-            margin: 0.5rem 0 0.2rem;
-        }
-        .contact input, .contact textarea {
-            padding: 0.5rem;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact input[type="submit"] {
-            background: #444;
-            color: #fff;
-            border: none;
-            padding: 0.7rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .contact input[type="submit"]:hover {
-            background: #666;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #f4f4f4;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Wooden Spoke Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <h1>Wooden Spoke</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <p class="location">[Your Location Here]</p>
+    </header>
 
-<header>
-    <h1>Wooden Spoke</h1>
-    <p>Custom wood furniture and designs</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="your-photo.jpg" alt="Your Photo" class="about-photo">
+                <p class="about-text">[Add your bio here]</p>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About</h2>
-    <img src="placeholder.jpg" alt="Your Photo" />
-    <p><!-- Add your bio here --></p>
-</section>
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="gallery">
+                <!-- Add image placeholders -->
+                <div class="gallery-item"><img src="work1.jpg" alt="Work 1"></div>
+                <div class="gallery-item"><img src="work2.jpg" alt="Work 2"></div>
+                <!-- Add more gallery items here -->
+            </div>
+        </div>
+    </section>
 
-<section id="work">
-    <h2>Work</h2>
-    <div class="portfolio">
-        <!-- Section 1 -->
-        <div class="portfolio-item">
-            <img src="placeholder1.jpg" alt="Work Example 1">
-            <p>Description of work 1</p>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email Address (required):</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number (optional):</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>Email me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
         </div>
-        <div class="portfolio-item">
-            <img src="placeholder2.jpg" alt="Work Example 2">
-            <p>Description of work 2</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="placeholder3.jpg" alt="Work Example 3">
-            <p>Description of work 3</p>
-        </div>
-        <!-- Section 2 -->
-        <div class="portfolio-item">
-            <img src="placeholder4.jpg" alt="Work Example 4">
-            <p>Description of work 4</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="placeholder5.jpg" alt="Work Example 5">
-            <p>Description of work 5</p>
-        </div>
-        <!-- Section 3 -->
-        <div class="portfolio-item">
-            <img src="placeholder6.jpg" alt="Work Example 6">
-            <p>Description of work 6</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="placeholder7.jpg" alt="Work Example 7">
-            <p>Description of work 7</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Are you interested in working on something together?</p>
-    <form>
-        <label for="name">Name (required):</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email Address (required):</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="phone">Phone Number (optional):</label>
-        <input type="tel" id="phone" name="phone">
-        
-        <label for="message">Message (optional):</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-        
-        <input type="submit" value="Submit">
-    </form>
-</section>
-
-<footer>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-</footer>
-
+    </section>
 </body>
 </html>
