@@ -152,14 +152,15 @@ ul li a:hover {
 .gallery-grid {
     display: grid;
     gap: 10px; /* Space between images */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
 }
 
 .grid-item {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* Make the image take up the full width of its grid cell */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensures the image fills its container */
     display: block;
+    max-width: 100%; /* Prevent images from stretching beyond their container */
     border-radius: 5px; /* Optional: rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -172,10 +173,12 @@ ul li a:hover {
 /* Special Grid Items for Variation */
 .grid-item.wide {
     grid-column: span 2; /* Wide image spans two columns */
+    height: 100%; /* Ensure it adjusts correctly in the grid */
 }
 
 .grid-item.tall {
     grid-row: span 2; /* Tall image spans two rows */
+    height: 100%; /* Ensure it adjusts correctly in the grid */
 }
 
 /* Page Styling */
