@@ -1,50 +1,42 @@
-/* General Reset for Navbar */
-.navbar {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
-/* Logo Section */
-.navbar .logo a {
+header .logo a {
     font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
-/* Navigation Links */
-.navbar .nav-links {
+header ul {
+    list-style-type: none;
     display: flex;
-    gap: 20px;
 }
 
-.navbar .nav-links a {
-    font-size: 1em;
-    color: #fff;
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Hover Effects for Navigation Links */
-.navbar .nav-links a:hover {
-    background-color: #555; /* Slightly lighter shade on hover */
-    color: #fff;
-}
-
-/* General Body Styling */
-body {
-    font-family: 'Futura', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    font-size: 1.1em;
 }
 
 /* Hero Section */
@@ -90,6 +82,62 @@ body {
 .explore-btn:hover {
     background-color: #555;
 }
+
+/* Contact Form Section */
+#contact-form {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact-form h2 {
+    margin-bottom: 20px;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+.email-contact {
+    margin-top: 20px;
+}
+
+.email-contact a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 
 /* About Section */
 .about {
