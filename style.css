@@ -120,3 +120,32 @@ header nav .logo a {
 #contact p {
     margin-top: 20px;
 }
+
+
+/* Style for the images on the work page */
+#work .work-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Style for individual work items */
+#work .work-item img {
+    width: 100%;         /* Make the image fill its container */
+    height: auto;        /* Keep the image aspect ratio intact */
+    border-radius: 8px;  /* Optional: to add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+/* Optional: Control the size of the images (adjust this based on preference) */
+#work .work-item {
+    max-width: 100%;
+    margin: 0 auto; /* Centers the images in the grid */
+}
+
+/* Additional tweaks for the grid layout (optional) */
+#work .work-items {
+    grid-gap: 15px;  /* Adjust the gap between images */
+    padding: 20px;
+}
