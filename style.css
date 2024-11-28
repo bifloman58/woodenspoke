@@ -5,32 +5,50 @@ body {
     padding: 0;
 }
 
+/* Header Section (Navigation Bar) */
 header {
     background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 10px 0;
 }
 
-header nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline;
+ul li {
     margin-right: 20px;
 }
 
-header nav ul li a {
-    color: white;
+ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
 }
 
-header nav .logo a {
-    font-weight: bold;
-    font-size: 24px;
+ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
 }
 
 /* Hero Section */
