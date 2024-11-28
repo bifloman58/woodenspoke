@@ -1,62 +1,82 @@
-/* General Styles */
+/* General Body Styling */
 body {
-    font-family: Futura, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
 }
 
-/* Header */
-header {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
+/* Navigation Bar */
+nav {
+    background-color: #333; /* Dark grey for the nav bar */
+    color: #fff; /* White text */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px 20px;
 }
-header .logo a {
-    color: white;
+nav a {
+    color: #ddd; /* Lighter grey for links */
     text-decoration: none;
-    font-size: 1.5em;
+    margin: 0 10px;
     font-weight: bold;
 }
-header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+nav a:hover {
+    color: #fff; /* White hover effect */
 }
-header ul li {
-    margin: 0 15px;
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #444; /* Medium grey for the header */
+    color: #fff; /* White text */
+    padding: 50px 0;
 }
-header ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+header h1 {
+    font-size: 2.5em;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 /* Gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller minimum column size */
-    gap: 15px; /* Reduced gap between images */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 15px;
     padding: 20px;
 }
 .gallery-item {
     overflow: hidden;
-    border: 2px solid #ddd;
+    border: 2px solid #ddd; /* Light grey border */
     border-radius: 5px;
-    max-height: 200px; /* Sets maximum height for images */
+    background-color: #fff; /* White background for image containers */
+    max-height: 200px;
 }
 .gallery-item img {
-    width: 100%; /* Ensures images scale to fit the container */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures images fill the container without distortion */
-    transition: transform 0.3s ease; /* Hover effect */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 .gallery-item:hover img {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05);
+    filter: brightness(85%); /* Subtle dimming effect on hover */
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333; /* Dark grey */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    margin-top: 30px;
+}
+footer a {
+    color: #ddd; /* Light grey links */
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff; /* White hover effect */
+}
