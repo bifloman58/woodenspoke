@@ -1,228 +1,55 @@
-/* General Styles */
-body {
-    font-family: Futura, sans-serif;
+/* General Reset */
+body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Futura', sans-serif;
 }
 
-/* Header Section (Navigation Bar) */
-header {
-    background-color: #000000;
-    padding: 10px 0;
-}
-
-nav {
+/* Navigation Bar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
 }
 
-nav .logo a {
-    color: #fff; /* Set the logo color to white */
+.navbar .logo {
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
+.nav-links {
+    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
 }
 
-ul li {
-    margin-right: 20px;
-}
-
-ul li a {
-    color: #000000; /* Set the nav links color to white */
+.nav-links li a {
     text-decoration: none;
-    font-size: 16px;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
+    color: white;
+    font-size: 18px;
 }
-
-ul li a:hover {
-    background-color: #555;
-    border-radius: 4px;
-}
-
 
 /* Hero Section */
 .hero {
-    background-image:  url('https://github.com/bifloman58/woodenspoke/blob/main/images/TVstand3.jpg?raw=true" alt="Chair 1'); /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the section without distortion */
-    background-position: center center; /* Centers the image */
-    height: 100vh; /* Makes the hero section full screen */
+    height: 100vh;
+    background: url('your-hero-image.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
-    text-align: center;
-    padding: 0 20px;
+    position: relative;
 }
-.hero-text {
-    padding: 0; /* Remove padding to eliminate the box effect */
-    max-width: 600px;
-    text-align: center;
 
 .hero h1 {
-    font-size: 48px; /* Adjust as needed */
-    font-family: 'Futura', sans-serif; /* Replace with preferred font */
-    margin: 0 0 20px;
-    padding: 10px;
-    background-color: rgba(128, 128, 128, 0.7); /* Slight grey background */
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.hero p {
-    font-size: 20px;
-    margin: 0 0 20px;
-    font-family: 'Futura', sans-serif; /* Replace with preferred font */
-}
-
-.hero .btn {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-family: 'Futura', sans-serif; /* Replace with preferred font */
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: grey;
-}
-
-/* Contact Section */
-#contact {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#contact form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-#contact form input, #contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+    font-size: 48px;
+    background: rgba(0, 0, 0, 0.5); /* Adds slight background for text */
+    padding: 20px 30px;
     border-radius: 5px;
 }
-
-#contact form button {
-    margin-top: 20px;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact form button:hover {
-    background-color: #444;
-}
-
-#contact p {
-    margin-top: 20px;
-}
-
-
-/* Gallery Grid */
-.gallery-grid {
-    display: grid;
-    gap: 10px; /* Space between images */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-}
-
-.grid-item {
-    width: 30%; /* Make the image take up the full width of its grid cell */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Ensures the image fills its container */
-    display: block;
-    max-width: 30%; /* Prevent images from stretching beyond their container */
-    border-radius: 5px; /* Optional: rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grid-item:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
-}
-
-/* Special Grid Items for Variation */
-.grid-item.wide {
-    grid-column: span 2; /* Wide image spans two columns */
-    height: 100%; /* Ensure it adjusts correctly in the grid */
-}
-
-.grid-item.tall {
-    grid-row: span 2; /* Tall image spans two rows */
-    height: 100%; /* Ensure it adjusts correctly in the grid */
-}
-
-/* Page Styling */
-.work-header {
-    margin-left: 20px; /* Adjust left margin as needed */
-    font-size: 36px;
-    font-family: 'Futura', sans-serif;
-    color: #333;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-
-
