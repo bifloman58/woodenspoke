@@ -54,7 +54,7 @@ ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image:  <img src="https://github.com/bifloman58/woodenspoke/blob/main/images/TVstand3.jpg?raw=true" alt="Chair 1">; /* Replace with your image URL */
+    background-image:  url('https://github.com/bifloman58/woodenspoke/blob/main/images/TVstand3.jpg?raw=true" alt="Chair 1'); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the section without distortion */
     background-position: center center; /* Centers the image */
     height: 100vh; /* Makes the hero section full screen */
