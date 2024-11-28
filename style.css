@@ -1,24 +1,25 @@
 /* General Body Styling */
 body {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light grey background */
+    background-color: #f9f9f9; /* Subtle off-white background */
     color: #333; /* Dark grey text */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333; /* Dark grey for the nav bar */
+    background-color: #444; /* Dark grey background */
     color: #fff; /* White text */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
 }
 nav a {
-    color: #ddd; /* Lighter grey for links */
+    color: #ddd; /* Light grey for links */
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: bold;
 }
 nav a:hover {
@@ -28,55 +29,58 @@ nav a:hover {
 /* Header Styling */
 header {
     text-align: center;
-    background-color: #444; /* Medium grey for the header */
+    background-color: #333; /* Dark grey header */
     color: #fff; /* White text */
     padding: 50px 0;
 }
-header h1 {
-    font-size: 2.5em;
+header .logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
 }
-header p {
+
+/* Work Section */
+.work-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.work-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #444; /* Slightly darker grey */
+}
+.work-section p {
+    margin-bottom: 30px;
     font-size: 1.2em;
-    margin-top: 10px;
+    color: #666; /* Medium grey */
 }
 
 /* Gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
     padding: 20px;
 }
 .gallery-item {
     overflow: hidden;
-    border: 2px solid #ddd; /* Light grey border */
-    border-radius: 5px;
-    background-color: #fff; /* White background for image containers */
-    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    display: block;
 }
-.gallery-item:hover img {
-    transform: scale(1.05);
-    filter: brightness(85%); /* Subtle dimming effect on hover */
+.gallery-item:hover {
+    transform: scale(1.03); /* Subtle zoom */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    background-color: #333; /* Dark grey */
-    color: #fff; /* White text */
-    padding: 20px 0;
-    margin-top: 30px;
-}
-footer a {
-    color: #ddd; /* Light grey links */
-    text-decoration: none;
-}
-footer a:hover {
-    color: #fff; /* White hover effect */
-}
+    background-color: #444; /* Dark grey */
+    color:
