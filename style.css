@@ -99,6 +99,70 @@ body {
     border-color: #222;
 }
 
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #222;
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+    padding: 30px 20px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+}
+.get-in-touch h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.get-in-touch p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+.get-in-touch a {
+    color: #f4f4f4;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.get-in-touch a:hover {
+    color: #ddd;
+}
+
 /* Footer */
 footer {
     background-color: #444;
