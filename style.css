@@ -10,7 +10,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/hero.jpg'); /* Replace with your hero image */
+    background-image: url('https://github.com/bifloman58/woodenspoke/blob/main/images/hero.jpg'); /* Replace with your hero image */
     background-size: cover;
     background-position: center;
     height: 100vh;
