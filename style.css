@@ -177,9 +177,8 @@ ul li a:hover {
 }
 
 .work-header {
-    text-align: center; /* Centers the header text */
-    margin: 20px auto; /* Adds vertical spacing */
-    font-size: 36px; /* Adjust size as needed */
-    font-family: 'Futura', sans-serif; /* Replace with preferred font */
-    color: #333; /* Adjust color as needed */
+    margin-left: 20px; /* Adjust left margin as needed */
+    font-size: 36px;
+    font-family: 'Futura', sans-serif;
+    color: #333;
 }
