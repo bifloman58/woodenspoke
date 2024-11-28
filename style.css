@@ -1,3 +1,43 @@
+/* General Reset for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Logo Section */
+.navbar .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effects for Navigation Links */
+.navbar .nav-links a:hover {
+    background-color: #555; /* Slightly lighter shade on hover */
+    color: #fff;
+}
+
 /* General Body Styling */
 body {
     font-family: 'Futura', sans-serif;
