@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Spoke</title>
+    <title>Wooden Spoke - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,55 +31,26 @@
     </div>
 </section>
 
-<!-- Teaser Work Section -->
-<section class="teaser-work">
-    <h2>Featured Work</h2>
-    <div class="teaser-gallery">
-        <div class="teaser-item">
-            <img src="images/Chair1.JPG" alt="Custom Wooden Chair">
-        </div>
-        <div class="teaser-item">
-            <img src="images/CoffeeTable1.jpg" alt="Handcrafted Coffee Table">
-        </div>
-        <div class="teaser-item">
-            <img src="images/TVstand1.JPG" alt="Custom TV Stand">
-        </div>
-    </div>
-    <a class="cta-link" href="work.html">See More Work</a>
-</section>
-
-<!-- Contact Section -->
-<section class="contact">
-    <h2>Contact Us</h2>
-    <p>Are you interested in working on something together?</p>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">Name (required)</label>
+<!-- Contact Form Section -->
+<section id="contact">
+    <h2>Get In Touch</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name (Required)</label>
         <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address (required)</label>
+        
+        <label for="email">Email Address (Required)</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone Number (optional)</label>
+        <label for="phone">Phone Number (Optional)</label>
         <input type="tel" id="phone" name="phone">
 
-        <label for="message">Message (optional)</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <label for="message">Message (Optional)</label>
+        <textarea id="message" name="message"></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Send Message</button>
     </form>
+    <p>Email us at: <a href="mailto:kevinmiller2012@gmail.com">kevinmiller2012@gmail.com</a></p>
 </section>
-
-    <!-- Get in Touch Section -->
-<section class="get-in-touch">
-    <h2>Get in Touch</h2>
-    <p>Email us directly at <a href="mailto:kevinmiller2012@gmail.com">kevinmiller2012@gmail.com</a></p>
-</section>
-    
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Wooden Spoke. All Rights Reserved.</p>
-</footer>
 
 </body>
 </html>
-
