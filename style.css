@@ -74,7 +74,7 @@ ul li a:hover {
 
 .hero h1 {
     font-size: 48px; /* Adjust as needed */
-    font-family: 'Arial', sans-serif; /* Replace with preferred font */
+    font-family: 'Futura', sans-serif; /* Replace with preferred font */
     margin: 0 0 20px;
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.7); /* Slight grey background */
@@ -85,7 +85,7 @@ ul li a:hover {
 .hero p {
     font-size: 20px;
     margin: 0 0 20px;
-    font-family: 'Arial', sans-serif; /* Replace with preferred font */
+    font-family: 'Futura', sans-serif; /* Replace with preferred font */
 }
 
 .hero .btn {
@@ -94,7 +94,7 @@ ul li a:hover {
     text-decoration: none;
     padding: 10px 20px;
     font-size: 18px;
-    font-family: 'Arial', sans-serif; /* Replace with preferred font */
+    font-family: 'Futura', sans-serif; /* Replace with preferred font */
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
