@@ -37,32 +37,26 @@ header ul li a {
     font-weight: bold;
 }
 
-/* Work Section */
-#work {
-    padding: 40px 20px;
-    text-align: center;
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller minimum column size */
+    gap: 15px; /* Reduced gap between images */
+    padding: 20px;
 }
-#work h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-.work-category {
-    margin-bottom: 50px;
-}
-.work-category h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #444;
-}
-.work-items {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.work-item {
-    background: white;
-    padding: 10px;
-    border: 1px solid #ddd;
+.gallery-item {
+    overflow: hidden;
+    border: 2px solid #ddd;
     border-radius: 5px;
-    width:
+    max-height: 200px; /* Sets maximum height for images */
+}
+.gallery-item img {
+    width: 100%; /* Ensures images scale to fit the container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images fill the container without distortion */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
