@@ -21,7 +21,7 @@ nav {
 }
 
 nav .logo a {
-    color: #fff;
+    color: #fff; /* Set the logo color to white */
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -39,7 +39,7 @@ ul li {
 }
 
 ul li a {
-    color: #fff;
+    color: #fff; /* Set the nav links color to white */
     text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
@@ -50,6 +50,7 @@ ul li a:hover {
     background-color: #555;
     border-radius: 4px;
 }
+
 
 /* Hero Section */
 .hero {
