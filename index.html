@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Wooden Spoke</title>
+    <title>Wooden Spoke</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Header Section -->
-<header class="hero">
-    <div class="hero-overlay">
-        <h1>Wooden Spoke</h1>
-        <p>Custom Crafted Furniture, Designed for Generations</p>
-        <a href="work.html" class="cta-button">Explore Our Work</a>
-    </div>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Wooden Spoke</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- About Section -->
-<section class="about">
-    <h2>About Us</h2>
-    <p>
-        At Wooden Spoke, we specialize in creating handcrafted furniture with a timeless aesthetic. 
-        Every piece is built with care, precision, and a passion for craftsmanship.
-    </p>
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to Wooden Spoke</h1>
+    <p>Crafting bespoke furniture, designed to last generations.</p>
+    <a class="cta-button" href="work.html">Explore Our Work</a>
 </section>
 
 <!-- Teaser Work Section -->
 <section class="teaser-work">
-    <h2>Our Creations</h2>
+    <h2>Featured Work</h2>
     <div class="teaser-gallery">
         <div class="teaser-item">
             <img src="images/Chair1.JPG" alt="Custom Wooden Chair">
@@ -37,16 +39,38 @@
             <img src="images/CoffeeTable1.jpg" alt="Handcrafted Coffee Table">
         </div>
         <div class="teaser-item">
-            <img src="images/TVstand1.JPG" alt="Custom TV Stand">
+            <img src="images/TVstand1.jpg" alt="Custom TV Stand">
         </div>
     </div>
-    <a href="work.html" class="cta-link">View More</a>
+    <a class="cta-link" href="work.html">See More Work</a>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Are you interested in working on something together?</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name (required)</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address (required)</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2024 Wooden Spoke. All rights reserved.</p>
+    <p>&copy; 2024 Wooden Spoke. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+
