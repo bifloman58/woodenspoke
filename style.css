@@ -48,44 +48,47 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    position: relative;
-    background-image: url('images/TVstand3.jpg'); /* Replace with your hero image */
+#hero {
+    background-image: url('your-image-path.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 500px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #fff;
+    align-items: center;
+    color: white;
 }
-.hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+
+#hero .hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Grey background with transparency */
     padding: 20px;
     border-radius: 10px;
+    max-width: 80%;
 }
-.hero h1 {
+
+#hero h1 {
     font-size: 3em;
-    margin: 0 0 10px;
-    font-weight: bold;
-}
-.hero p {
-    font-size: 1.2em;
     margin-bottom: 20px;
 }
-.cta-button {
-    display: inline-block;
-    padding: 10px 10px;
-    background-color: #444;
-    color: #fff;
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
+    font-size: 1.2em;
     transition: background-color 0.3s ease;
 }
-.cta-button:hover {
-    background-color: #222;
+
+.explore-btn:hover {
+    background-color: #555;
 }
 
 /* About Section */
