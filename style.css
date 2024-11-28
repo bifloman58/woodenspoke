@@ -175,3 +175,11 @@ ul li a:hover {
     grid-gap: 15px;  /* Adjust the gap between images */
     padding: 20px;
 }
+
+.work-header {
+    text-align: center; /* Centers the header text */
+    margin: 20px auto; /* Adds vertical spacing */
+    font-size: 36px; /* Adjust size as needed */
+    font-family: 'Futura', sans-serif; /* Replace with preferred font */
+    color: #333; /* Adjust color as needed */
+}
