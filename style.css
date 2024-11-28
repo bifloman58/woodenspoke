@@ -65,12 +65,10 @@ ul li a:hover {
     text-align: center;
     padding: 0 20px;
 }
-    .hero-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
-    padding: 20px;
-    border-radius: 10px;
+.hero-text {
+    padding: 0; /* Remove padding to eliminate the box effect */
     max-width: 600px;
-}
+    text-align: center;
 
 .hero h1 {
     font-size: 48px; /* Adjust as needed */
