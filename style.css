@@ -34,16 +34,17 @@ header nav .logo a {
 }
 
 /* Hero Section */
-#hero {
-    background-image: url('TVstand3.jpg'); /* Replace with your actual image URL */
-    background-size: cover;
-    background-position: center;
-    height: 600px; /* Adjust as needed */
+.hero {
+    background-image: url('TVstand3.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the section without distortion */
+    background-position: center center; /* Centers the image */
+    height: 100vh; /* Makes the hero section full screen */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    padding: 0 20px;
 }
 
 .hero-content {
