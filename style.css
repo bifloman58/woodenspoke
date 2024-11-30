@@ -78,7 +78,89 @@
     background-color: white;
     color: black;
 }
+/* Contact Form Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
+#contact h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#contact form div {
+    margin-bottom: 15px;
+}
+
+#contact form label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact form button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: 'Futura', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+
+/* Optional styling for form section responsiveness */
+@media (max-width: 768px) {
+    #contact form {
+        padding: 20px;
+    }
+
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+}
 body {
     margin: 0;
     padding: 0;
