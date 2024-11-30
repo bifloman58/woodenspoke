@@ -46,7 +46,7 @@
 .hero {
     position: relative;
     height: 100vh; /* Full screen height */
-    background-image: url('https://github.com/bifloman58/woodenspoke/blob/main/images/TVstand3.jpg') no-repeat center center/cover;
+    background-image: url('images/TVstand3.jpg'); no-repeat center center/cover;
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
     display: flex;
