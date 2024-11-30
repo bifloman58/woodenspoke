@@ -120,7 +120,7 @@
 }
 
 .contact-form input[type="tel"] {
-    max-width: 200px; /* Limit the phone number box size */
+    max-width: 100px; /* Limit the phone number box size */
 }
 
 .contact-form textarea {
