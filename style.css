@@ -222,3 +222,52 @@ footer a:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Navigation Bar - Work Page */
+.work-page nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    backdrop-filter: blur(10px); /* Blurred background for a sleek look */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.work-page nav a.logo {
+    font-family: 'Futura', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.work-page nav ul {
+    display: flex;
+    gap: 20px; /* Spacing between navigation items */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-page nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Futura', sans-serif;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.work-page nav ul li a:hover {
+    color: grey; /* Subtle hover effect */
+}
+
+.work-page nav ul li a.active {
+    font-weight: bold;
+    color: #555; /* Highlighted style for active page */
+}
+
