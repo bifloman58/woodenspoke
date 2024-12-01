@@ -125,6 +125,7 @@ footer a:hover {
     background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     padding: 10px 20px;
     border-radius: 5px;
+    display: inline-block;
 }
 .hero p {
     font-size: 20px;
