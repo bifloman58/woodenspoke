@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wooden Spoke</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS here -->
+</head>
+<body class="about-page">
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="logo">Wooden Spoke</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Photo Placeholder -->
+            <div class="about-photo">
+                <img src="path-to-photo.jpg" alt="Kevin Miller" class="about-photo-img"> <!-- Replace with your image path -->
+            </div>
+
+            <!-- Story Section -->
+            <div class="story">
+                <h2>Our Story</h2>
+                <p>Wooden Spoke began with a passion for woodworking and a desire to create lasting, custom furniture. Founded by Kevin Miller, what started as a personal hobby has grown into a full-scale operation focused on delivering timeless, quality pieces that fit seamlessly into any home. Every project tells a story, and we pride ourselves on making that story personal to each client.</p>
+            </div>
+
+            <!-- Process Section -->
+            <div class="process">
+                <h2>Our Process</h2>
+                <p>At Wooden Spoke, we approach every piece with care. We start by understanding your vision, followed by designing and selecting the best materials for the job. Once the design is approved, our skilled craftsmen get to work. From sanding to finishing, every step is performed with precision to ensure your custom piece exceeds expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wooden Spoke | All rights reserved.</p>
+    </footer>
+</body>
+</html>
