@@ -47,10 +47,12 @@ body.home-page .navbar {
 /* Hero Section */
 .hero {
     position: relative;
+    width: 100%;
     height: 100vh; /* Full screen height */
     background-image: url('images/TVstand3.jpg');
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
