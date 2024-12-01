@@ -211,8 +211,8 @@ footer a:hover {
 }
 
 .gallery-grid img {
-    width: 100%; /* Makes the image take up the full width of the grid cell, but controlled by grid settings */
-    max-width: 100%; /* Ensures that the image does not exceed the width of its container */
+    width: 25%; /* Makes the image take up the full width of the grid cell, but controlled by grid settings */
+    max-width: 25%; /* Ensures that the image does not exceed the width of its container */
     height: auto; /* Maintains aspect ratio */
     object-fit: cover; /* Ensures the image fills the space but retains aspect ratio */
     border-radius: 10px;
