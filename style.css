@@ -1,9 +1,18 @@
 /* Reset Navigation Bar Background */
 
 body {
-    display: block; /* Default behavior: vertical flow */
-    margin: 0; /* Remove default margins */
+    display: block; /* Default vertical layout */
+    margin: 0;
+    font-family: "Futura", sans-serif;
+    background-color: #f4f4f4; /* Optional background */
 }
+
+section {
+    width: 100%; /* Full width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .home-navbar {
     background: none !important;
     position: absolute;
