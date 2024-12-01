@@ -243,25 +243,6 @@ body {
     margin-top: 60px; /* Adjust based on navbar height */
 }
 
-/* Home Page Specific Styles */
-.home-nav {
-    position: absolute; /* Overlays the hero image */
-    background: none; /* Transparent background */
-    color: white;
-}
-
-.home-nav a.logo {
-    color: white; /* White logo text for hero image contrast */
-}
-
-.home-nav ul li a {
-    color: white;
-}
-
-.home-nav ul li a:hover {
-    color: lightgrey;
-}
-
 /* About Section Styling */
 .about-section {
     padding: 80px 20px 40px;
