@@ -1,6 +1,5 @@
 /* Reset Navigation Bar Background */
-body.home-page .navbar {
-    background: none !important; /* Forces no background */
+
 .navbar {
     position: absolute; 
     top: 0;
