@@ -1,19 +1,20 @@
 
 
 /* Reset Navigation Bar Background */
-.navbar {
-    position: absolute; 
+.home-navbar {
+    background: none !important;
+    position: absolute;
     top: 0;
-    width: 100%; /* Ensures it spans the full width of the viewport */
+    width: 100%;
+    z-index: 10;
     display: flex;
     justify-content: space-between; /* Spreads logo and nav items */
     align-items: center;
     padding: 20px 40px; /* Adjust padding as needed */
-    background: transparent !important;
-    z-index: 10;
     box-sizing: border-box; /* Includes padding in total width */
 }
-.navbar .logo a {
+
+.home-navbar .logo a {
     text-decoration: none;
     color: white; /* White font for contrast */
     font-size: 24px;
@@ -22,17 +23,17 @@
     transition: color 0.3s;
 }
 
-.navbar .logo a:hover {
+.home-navbar .logo a:hover {
     color: #ccc; /* Optional hover effect */
 }
 
-.nav-links {
+.home-navbar-links {
     list-style: none;
     display: flex;
     gap: 20px; /* Spacing between nav items */
 }
 
-.nav-links a {
+.home-navbar-links a {
     text-decoration: none;
     color: white;
     font-family: "Futura", sans-serif;
@@ -40,7 +41,7 @@
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.home.navbar-links a:hover {
     color: #ccc; /* Optional hover effect */
 }
 
