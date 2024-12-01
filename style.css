@@ -189,24 +189,23 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* About Page Styles */
-body.about-page nav {
+/* Shared Navigation Bar Styles for About and Work Pages */
+.secondary-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px; /* Reduced padding to avoid overflow */
+    padding: 15px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Adds a blur effect for elegance */
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    overflow: hidden; /* Ensures content does not overflow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box;
 }
 
-body.about-page nav a.logo {
+.secondary-nav a.logo {
     font-family: 'Futura', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -214,7 +213,7 @@ body.about-page nav a.logo {
     color: black;
 }
 
-body.about-page nav ul {
+.secondary-nav ul {
     display: flex;
     gap: 20px;
     list-style-type: none;
@@ -222,7 +221,7 @@ body.about-page nav ul {
     padding: 0;
 }
 
-body.about-page nav ul li a {
+.secondary-nav ul li a {
     text-decoration: none;
     color: black;
     font-family: 'Futura', sans-serif;
@@ -230,13 +229,37 @@ body.about-page nav ul li a {
     transition: color 0.3s ease;
 }
 
-body.about-page nav ul li a:hover {
+.secondary-nav ul li a:hover {
     color: grey;
 }
 
-body.about-page nav ul li a.active {
+.secondary-nav ul li a.active {
     font-weight: bold;
     color: #555;
+}
+
+/* Ensure content starts below fixed navbar */
+body {
+    margin-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Home Page Specific Styles */
+.home-nav {
+    position: absolute; /* Overlays the hero image */
+    background: none; /* Transparent background */
+    color: white;
+}
+
+.home-nav a.logo {
+    color: white; /* White logo text for hero image contrast */
+}
+
+.home-nav ul li a {
+    color: white;
+}
+
+.home-nav ul li a:hover {
+    color: lightgrey;
 }
 
 /* About Section Styling */
