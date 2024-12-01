@@ -1,33 +1,30 @@
-/* Reset Navigation Bar Background */
-
 body {
-    display: block; /* Default vertical layout */
-    margin: 0;
-    font-family: "Futura", sans-serif;
-    background-color: #f4f4f4; /* Optional background */
+    margin: 0; /* Remove default margins */
+    font-family: 'Futura', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 section {
-    width: 100%; /* Full width */
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
 }
-
 .home-navbar {
-    background: none !important;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 10;
-    justify-content: space-between; /* Spreads logo and nav items */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; /* Adjust padding as needed */
-    box-sizing: border-box; /* Includes padding in total width */
+    padding: 20px 40px;
+    background: none; /* No background, sits directly on the hero image */
+    z-index: 10; /* Keep above hero image */
 }
 
 .home-navbar .logo a {
     text-decoration: none;
-    color: white; /* White font for contrast */
+    color: white; /* White font on the hero image */
     font-size: 24px;
     font-family: "Futura", sans-serif;
     font-weight: bold;
@@ -35,76 +32,106 @@ section {
 }
 
 .home-navbar .logo a:hover {
-    color: #ccc; /* Optional hover effect */
+    color: #ccc; /* Hover effect */
 }
 
-.home-navbar-links {
+.home-navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px; /* Spacing between nav items */
+    gap: 20px;
 }
 
-.home-navbar-links a {
+.home-navbar .nav-links a {
     text-decoration: none;
-    color: white;
-    font-family: "Futura", sans-serif;
+    color: white; /* White links */
     font-size: 18px;
     transition: color 0.3s;
 }
 
-.home.navbar-links a:hover {
-    color: #ccc; /* Optional hover effect */
+.home-navbar .nav-links a:hover {
+    color: #ccc; /* Hover effect */
+}
+.secondary-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333; /* Grey background */
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero Section */
+.secondary-navbar .logo a {
+    text-decoration: none;
+    color: white; /* White text for the logo */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.secondary-navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.secondary-navbar .nav-links a {
+    text-decoration: none;
+    color: white; /* White links */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.secondary-navbar .nav-links a:hover {
+    color: #ccc; /* Hover effect */
+}
+footer {
+    background-color: #333; /* Grey background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ccc; /* Hover effect */
+    text-decoration: none;
+}
 .hero {
     position: relative;
     height: 100vh; /* Full screen height */
-    background-image: url('images/TVstand3.jpg');
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
+    background-image: url('images/TVstand3.jpg'); /* Replace with your hero image path */
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 1;
-    font-family: 'Futura', sans-serif;
 }
 
 .hero-content h1 {
     font-size: 48px;
     color: white;
-    font-family: "Futura", sans-serif;
-    background: rgba(0, 0, 0, 0.4); /* Slight grey background for contrast */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.hero-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Futura", sans-serif;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.hero-button:hover {
-    background-color: white;
-    color: black;
-}
-/* Contact Form Section */
 #contact {
     padding: 40px 20px;
     background-color: #f9f9f9;
-    text-align: center;
 }
 
 #contact h2 {
-    font-family: 'Futura', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -115,193 +142,4 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.contact-form .form-group {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"] {
-    flex: 1;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.contact-form input[type="tel"] {
-    max-width: 50px; /* Limit the phone number box size */
-}
-
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    font-family: 'Futura', sans-serif;
-}
-
-.contact-form button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: 0.3s ease-in-out;
-}
-/* Optional styling for form section responsiveness */
-@media (max-width: 768px) {
-    #contact form {
-        padding: 20px;
-    }
-
-    #contact h2 {
-        font-size: 1.8rem;
-    }
-}
-body {
-    margin: 0; /* Remove default margins */
-    background: black; /* Optional: Set fallback color */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-family: 'Futura', sans-serif;
-    font-size: 0.9rem;
-}
-
-footer .footer-content p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #ccc;
-    text-decoration: none;
-}
-
-/* Secondary Navigation Bar for About and Work Pages */
-.secondary-navbar {
-    position: fixed; /* Sticks to the top of the page */
-    top: 0;
-    width: 100%; /* Full-width navigation */
-    display: flex;
-    justify-content: space-between; /* Align logo and nav items */
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #333; /* Grey color from the footer */
-    z-index: 10; /* Ensure it stays above content */
-    box-sizing: border-box; /* Includes padding in total width */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.secondary-navbar .logo a {
-    text-decoration: none;
-    color: white; /* White font for contrast against grey */
-    font-size: 24px;
-    font-family: "Futura", sans-serif;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.secondary-navbar .logo a:hover {
-    color: #ccc; /* Optional hover effect */
-}
-
-.secondary-navbar .nav-links {
-    list-style: none; /* Removes bullet points */
-    display: flex;
-    gap: 20px; /* Spacing between nav items */
-}
-
-.secondary-navbar .nav-links a {
-    text-decoration: none;
-    color: white; /* White text for links */
-    font-family: "Futura", sans-serif;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.secondary-navbar .nav-links a:hover {
-    color: #ccc; /* Optional hover effect */
-}
-
-.secondary-navbar .nav-links a.active {
-    font-weight: bold; /* Highlights the active page */
-    text-decoration: underline; /* Optional for emphasis */
-}
-
-/* Ensure content starts below fixed navbar */
-body {
-    margin-top: 60px; /* Adjust based on navbar height */
-}
-
-/* About Section Styling */
-.about-section {
-    padding: 80px 20px 40px;
-    text-align: center;
-}
-
-.about-section .about-container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.about-section h1,
-.about-section h2 {
-    font-family: 'Futura', sans-serif;
-    color: #333;
-}
-
-.about-section .story p,
-.about-section .process p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Photo Section */
-.about-photo {
-    margin-bottom: 40px;
-}
-
-.about-photo-img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-}
-
-/* Footer Styles */
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    margin-top: 40px;
 }
