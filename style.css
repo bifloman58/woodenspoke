@@ -9,7 +9,7 @@
     justify-content: space-between; /* Spreads logo and nav items */
     align-items: center;
     padding: 20px 40px; /* Adjust padding as needed */
-    background: none;
+    background: transparent !important;
     z-index: 10;
     box-sizing: border-box; /* Includes padding in total width */
 }
@@ -163,8 +163,8 @@
     }
 }
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margins */
+    background: black; /* Optional: Set fallback color */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 /* Footer Styling */
