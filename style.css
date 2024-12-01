@@ -189,53 +189,55 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* Shared Navigation Bar Styles for About and Work Pages */
-.secondary-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    position: fixed;
-    width: 100%;
+/* Secondary Navigation Bar for About and Work Pages */
+.secondary-navbar {
+    position: fixed; /* Sticks to the top of the page */
     top: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    backdrop-filter: blur(10px); /* Adds a blur effect for elegance */
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    box-sizing: border-box;
-}
-
-.secondary-nav a.logo {
-    font-family: 'Futura', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-
-.secondary-nav ul {
+    width: 100%; /* Full-width navigation */
     display: flex;
-    gap: 20px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between; /* Align logo and nav items */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333; /* Grey color from the footer */
+    z-index: 10; /* Ensure it stays above content */
+    box-sizing: border-box; /* Includes padding in total width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.secondary-nav ul li a {
+.secondary-navbar .logo a {
     text-decoration: none;
-    color: black;
-    font-family: 'Futura', sans-serif;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.secondary-nav ul li a:hover {
-    color: grey;
-}
-
-.secondary-nav ul li a.active {
+    color: white; /* White font for contrast against grey */
+    font-size: 24px;
+    font-family: "Futura", sans-serif;
     font-weight: bold;
-    color: #555;
+    transition: color 0.3s;
+}
+
+.secondary-navbar .logo a:hover {
+    color: #ccc; /* Optional hover effect */
+}
+
+.secondary-navbar .nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex;
+    gap: 20px; /* Spacing between nav items */
+}
+
+.secondary-navbar .nav-links a {
+    text-decoration: none;
+    color: white; /* White text for links */
+    font-family: "Futura", sans-serif;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.secondary-navbar .nav-links a:hover {
+    color: #ccc; /* Optional hover effect */
+}
+
+.secondary-navbar .nav-links a.active {
+    font-weight: bold; /* Highlights the active page */
+    text-decoration: underline; /* Optional for emphasis */
 }
 
 /* Ensure content starts below fixed navbar */
