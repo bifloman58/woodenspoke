@@ -282,12 +282,3 @@ body {
     margin: 0 auto;
     display: block;
 }
-
-/* Footer Styles */
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    margin-top: 40px;
-}
