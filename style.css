@@ -114,7 +114,7 @@ footer a:hover {
     background-image: url('images/TVstand3.jpg'); /* Replace with your hero image path */
     background-size: cover;
     background-position: center;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
