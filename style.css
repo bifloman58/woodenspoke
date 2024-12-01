@@ -213,7 +213,7 @@ footer a:hover {
 
 .gallery-grid img {
     width: 100%; /* Ensures the image fills the grid cell width */
-    max-width: 100px; /* Set a max-width for images to prevent them from becoming too large */
+    max-width: 25px; /* Set a max-width for images to prevent them from becoming too large */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures images cover the space but retain aspect ratio */
     border-radius: 10px;
@@ -236,54 +236,73 @@ footer a:hover {
     }
 
 }
-/* Navigation Bar for Work Page */
+/* Work Page Navbar */
 body.work-page nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;  /* Adjust background color */
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.work-page .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px; /* Reduced padding to avoid overflow */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    overflow: hidden; /* Ensures content does not overflow */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-body.work-page nav a.logo {
-    font-family: 'Futura', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+body.work-page .logo {
+    font-size: 1.8rem;
+    color: #fff;
     text-decoration: none;
-    color: black;
 }
 
-body.work-page nav ul {
+body.work-page .nav-links {
+    list-style: none;
     display: flex;
     gap: 20px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-body.work-page nav ul li a {
+body.work-page .nav-links a {
     text-decoration: none;
-    color: black;
-    font-family: 'Futura', sans-serif;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
-body.work-page nav ul li a:hover {
-    color: grey;
+body.work-page .nav-links a:hover {
+    color: #f5a623;  /* Adjust hover color */
 }
 
-body.work-page nav ul li a.active {
-    font-weight: bold;
-    color: #555;
+/* Prevent content from overlapping navbar on the Work Page */
+body.work-page {
+    padding-top: 80px;  /* Adjust this padding based on your navbar height */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body.work-page .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body.work-page .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    body.work-page .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    body.work-page .logo {
+        margin-bottom: 15px;
+    }
 }
 
 /* About Page Styles */
