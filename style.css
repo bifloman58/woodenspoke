@@ -299,16 +299,19 @@ footer a:hover {
 
 /* About Page Styles */
 .about-page nav {
-    position: absolute; 
-    top: 0;
-    width: 100%; /* Ensures it spans the full width of the viewport */
     display: flex;
-    justify-content: space-between; /* Spreads logo and nav items */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; /* Adjust padding as needed */
-    background: none;
-    z-index: 10;
-    box-sizing: border-box; /* Includes padding in total width */
+    padding: 15px 20px; /* Reduced padding to avoid overflow */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    overflow: hidden; /* Ensures content does not overflow */
 }
 
 .about-page nav a.logo {
