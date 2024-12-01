@@ -118,13 +118,33 @@ footer a:hover {
     align-items: center;
     text-align: center;
 }
-
 .hero-content h1 {
     font-size: 48px;
     color: white;
     background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     padding: 10px 20px;
     border-radius: 5px;
+}
+.hero p {
+    font-size: 20px;
+    margin: 0 0 20px;
+    font-family: 'Futura', sans-serif; /* Replace with preferred font */
+}
+
+.hero .btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Futura', sans-serif; /* Replace with preferred font */
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: grey;
 }
 
 #contact {
