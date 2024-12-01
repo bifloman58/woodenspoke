@@ -297,3 +297,97 @@ footer a:hover {
         font-size: 1.2rem; /* Adjust logo size */
     }
 }
+
+/* About Page Styles */
+.about-page nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-page nav a.logo {
+    font-family: 'Futura', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.about-page nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-page nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Futura', sans-serif;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.about-page nav ul li a:hover {
+    color: grey;
+}
+
+.about-page nav ul li a.active {
+    font-weight: bold;
+    color: #555;
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.about-section .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-section h1,
+.about-section h2 {
+    font-family: 'Futura', sans-serif;
+    color: #333;
+}
+
+.about-section .story p,
+.about-section .process p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Photo Section */
+.about-photo {
+    margin-bottom: 40px;
+}
+
+.about-photo-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
