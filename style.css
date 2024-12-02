@@ -99,10 +99,10 @@ section {
 footer {
     background-color: #333; /* Grey background */
     color: white; /* White text */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 40px;
+    margin-top: 10px;
     display: block; 
 }
 
