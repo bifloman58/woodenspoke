@@ -181,3 +181,7 @@ footer a:hover {
     flex-direction: column;
     gap: 15px;
 }
+.about-section {
+    margin: 10px; /* Adjust to your desired margin size */
+    padding: 20px; /* Optional: Control the spacing inside the container */
+}
