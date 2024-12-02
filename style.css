@@ -14,6 +14,7 @@ section {
 .home-navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,8 @@ section {
     padding: 20px 40px;
     background: none; /* No background, sits directly on the hero image */
     z-index: 10; /* Keep above hero image */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .home-navbar .logo a {
