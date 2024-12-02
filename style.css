@@ -182,6 +182,6 @@ footer a:hover {
     gap: 15px;
 }
 .about-section {
-    margin: 10px; /* Adjust to your desired margin size */
-    padding: 20px; /* Optional: Control the spacing inside the container */
+    margin: 50px; /* Adjust to your desired margin size */
+    padding: 100px; /* Optional: Control the spacing inside the container */
 }
