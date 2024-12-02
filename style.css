@@ -61,17 +61,17 @@ section {
 .secondary-navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
-    background-color: #333; /* Grey background */
-    z-index: 10;
+    padding: 20px 40px;
+    background: #333; /* No background, sits directly on the hero image */
+    z-index: 10; /* Keep above hero image */
     box-sizing: border-box;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-
 .secondary-navbar .logo a {
     text-decoration: none;
     color: white; /* White text for the logo */
