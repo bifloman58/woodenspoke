@@ -41,8 +41,11 @@ section {
 
 .home-navbar .nav-links {
     list-style: none;
+    list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0; /* Ensures no extra margin causes overflow */
+    padding: 0; /* Removes padding that could cause overflow */
 }
 
 .home-navbar .nav-links a {
