@@ -124,7 +124,7 @@
     document.getElementById('work-gallery')
         .addEventListener('click', event => {
             if (event.target.tagName === 'IMG') {
-                enlarged.src = event.target.src;
+                enlarged.src = 'images/' + event.target.getAttribute('src').split('/').pop().replace(/\.webp$/, '');
                 enlarged.alt = event.target.alt;
                 viewer.showModal();
             }
