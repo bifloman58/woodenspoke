@@ -5,22 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work - Wooden Spoke</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="secondary-navbar">
-        <div class="logo">
-            <a href="index.html">Wooden Spoke</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html" class="active">Work</a></li>
-        </ul>
-    </nav>
     <style>
         .gallery {
             column-count: 3;
             column-gap: 15px;
-            padding: 150px 30px; /* Top padding accounts for nav bar height */
+            padding: 150px 30px;
         }
         .gallery img {
             width: 100%;
@@ -33,30 +22,43 @@
         }
     </style>
 </head>
+<body>
+    <nav class="secondary-navbar">
+        <div class="logo">
+            <a href="index.html">Wooden Spoke</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="active">Work</a></li>
+        </ul>
+    </nav>
 
-    <!-- Gallery Section -->
-    <div class="gallery">
-        <img src="images/Chair1.JPG" alt="Chair 1">
-        <img src="images/Chair2.JPG" alt="Chair 2">
-        <img src="images/Chair3.jpg" alt="Chair 3">
-        <img src="images/CoffeeTable1.jpg" alt="Coffee Table 1">
-        <img src="images/CoffeeTable2.jpg" alt="Coffee Table 2">
-        <img src="images/CoffeeTable3.jpg" alt="Coffee Table 3">
-        <img src="images/CoffeeTable4.jpg" alt="Coffee Table 4">
-        <img src="images/CoffeeTable.GIF" alt="Coffee Table Vid">
-        <img src="images/TVstand1.JPG" alt="TV Stand 1">
-        <img src="images/TVStand2.JPG" alt="TV Stand 2">
-        <img src="images/TVstand3.jpg" alt="TV Stand 3">
-        <img src="images/TVstand4.jpg" alt="TV Stand 4">
-    </div>
-</body>
-    </section>
-<footer>
-    <div class="footer-content">
-        <p>© 2024 Wooden Spoke. All rights reserved.</p>
-        <p>Contact us: <a href="mailto:kevinmiller2012@gmail.com">kevinmiller2012@gmail.com</a></p>
-    </div>
+    <div class="gallery" id="work-gallery"></div>
+
     <footer>
+        <div class="footer-content">
+            <p>© 2024 Wooden Spoke. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:kevinmiller2012@gmail.com">kevinmiller2012@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        fetch('gallery.json', { cache: 'no-cache' })
+            .then(response => {
+                if (!response.ok) throw new Error('Could not load gallery.json');
+                return response.json();
+            })
+            .then(photos => {
+                const gallery = document.getElementById('work-gallery');
+                photos.forEach(path => {
+                    const img = document.createElement('img');
+                    img.src = path;
+                    img.alt = path.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ');
+                    img.loading = 'lazy';
+                    gallery.appendChild(img);
+                });
+            })
+            .catch(error => console.error('Gallery could not load:', error));
+    </script>
 </body>
 </html>
-
