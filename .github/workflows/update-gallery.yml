@@ -19,6 +19,17 @@ jobs:
       - name: Check out website
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install image tools
+        run: pip install Pillow
+
+      - name: Generate thumbnails
+        run: python scripts/make_thumbnails.py
+
       - name: Update gallery photo list
         run: python scripts/update_gallery.py
 
@@ -26,9 +37,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add gallery.json
+          git add gallery.json thumbnails/
           if ! git diff --cached --quiet; then
-            git commit -m "Automatically update photo gallery"
+            git commit -m "Automatically update gallery and thumbnails"
             git push
           fi
-
