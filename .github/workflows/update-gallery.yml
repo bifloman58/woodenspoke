@@ -1,1 +1,34 @@
 
+name: Update Work Gallery
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'images/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-gallery:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Update gallery photo list
+        run: python scripts/update_gallery.py
+
+      - name: Save updated gallery
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gallery.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Automatically update photo gallery"
+            git push
+          fi
+
