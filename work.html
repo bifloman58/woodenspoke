@@ -63,7 +63,7 @@
                 const gallery = document.getElementById('work-gallery');
                 photos.forEach(path => {
                     const img = document.createElement('img');
-                    img.src = path;
+                    img.src = 'thumbnails/' + path.split('/').pop() + '.webp';
                     img.alt = path.split('/').pop().replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ');
                     img.loading = 'lazy';
                     gallery.appendChild(img);
